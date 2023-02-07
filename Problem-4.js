@@ -1,10 +1,13 @@
-function findingBadData(arrey){
-    if(typeof(arrey) !== 'object'){
+// The function findingBadData takes one parameter, called an arrey. The function consists of statement that says to return the parameter of the function count all of negetive value of this array.
+
+
+function findingBadData(array){
+    if(typeof(array) !== 'object'){
         return 'Please provide an arrey'
     }
     const badData=[];
-    for(let i = 0; i < arrey.length; i++){
-        const element = arrey[i];
+    for(let i = 0; i < array.length; i++){
+        const element = array[i];
         
         
         if(element < 0){
@@ -14,6 +17,6 @@ function findingBadData(arrey){
     }
     return badData.length;
 }
-const input = [-5];
+const input = [-2];
 const result = findingBadData(input);
 console.log(result);
