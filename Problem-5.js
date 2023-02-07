@@ -4,8 +4,8 @@
 
 
 function gemsToDiamond(firstFriendGems, secoundFriendGems, thirdFriendGems){
-    if(typeof firstFriendGems !== 'number' || typeof secoundFriendGems !== 'number' || typeof thirdFriendGems !== 'number'){
-        return 'Please enter a number'
+    if(typeof firstFriendGems !== 'number' || typeof secoundFriendGems !== 'number' || typeof thirdFriendGems !== 'number' || firstFriendGems < 0 || secoundFriendGems < 0 || thirdFriendGems < 0 ){
+        return 'Please enter a valid number'
     }
     const firstFriendDimond = firstFriendGems * 21;
     const secoundFriendDimond = secoundFriendGems * 32;

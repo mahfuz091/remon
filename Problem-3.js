@@ -13,6 +13,6 @@ function isLGSeven(number){
         return number*2;
     }
 }
-const input = 14;
+const input = -15;
 const result = isLGSeven(input);
 console.log(result);

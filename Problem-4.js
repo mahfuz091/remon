@@ -17,6 +17,6 @@ function findingBadData(array){
     }
     return badData.length;
 }
-const input = [-2];
+const input = [ -4, -9, -5, -33, -55 ];
 const result = findingBadData(input);
 console.log(result);

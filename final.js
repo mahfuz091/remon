@@ -1,10 +1,10 @@
 // This function takes an number and return that number multiply by 3 than added 10 than divided by 2 than deducts 5. 
 
 function mindGame(number){
-    if(typeof number !== 'number'){
-        return 'Please enter a number'
+    if(typeof number !== 'number' || number < 0){
+        return 'Please enter a valid number'
     }
-    const result = (((((Math.abs(number))*3)+10)/2)-5);
+    const result = (((((number)*3)+10)/2)-5);
     return result;
 }
 
@@ -70,8 +70,8 @@ function findingBadData(array){
 // The function gemsToDimond takes three parameter, called firstFriendGems, secoundFriendGems, thirdFriendGems. The function consists of statement that says to return the parameter of the function convert dimond if total dimond is getter than 2000 than return total dimond duducts 2000 or return total dimond.
 
 function gemsToDiamond(firstFriendGems, secoundFriendGems, thirdFriendGems){
-    if(typeof firstFriendGems !== 'number' || typeof secoundFriendGems !== 'number' || typeof thirdFriendGems !== 'number'){
-        return 'Please enter a number'
+    if(typeof firstFriendGems !== 'number' || typeof secoundFriendGems !== 'number' || typeof thirdFriendGems !== 'number' || firstFriendGems < 0 || secoundFriendGems < 0 || thirdFriendGems < 0 ){
+        return 'Please enter a valid number'
     }
     const firstFriendDimond = firstFriendGems * 21;
     const secoundFriendDimond = secoundFriendGems * 32;
@@ -85,3 +85,4 @@ function gemsToDiamond(firstFriendGems, secoundFriendGems, thirdFriendGems){
         return totalDimond;
     }
 }
+

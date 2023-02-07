@@ -2,10 +2,10 @@
 
 
 function mindGame(number){
-    if(typeof number !== 'number'){
-        return 'Please enter a number'
+    if(typeof number !== 'number' || number < 0){
+        return 'Please enter a valid number'
     }
-    const result = (((((Math.abs(number))*3)+10)/2)-5);
+    const result = (((((number)*3)+10)/2)-5);
     return result;
 }
 // This function works simple adding, deducting, Multiplication, devidation and Summation.  
